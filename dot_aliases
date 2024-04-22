@@ -1,0 +1,39 @@
+# ALIAS
+alias lg='lazygit'
+alias extractIP="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+alias hcd='cd ~/htb'
+alias cdt='cd ~/tools'
+alias cdd='cd ~/dotfiles'
+
+alias vim='nvim'
+alias zshreload='omz reload'
+alias vimz='vim ~/.zshrc'
+alias vimt='vim ~/.tmux.conf'
+alias vimv='vim ~/.vimrc'
+alias vimh='sudo vim /etc/hosts'
+alias vima='vim ~/.aliases'
+alias vims='vim ~/.ssh/known_hosts'
+alias ls='lsd --group-dirs=first'
+alias ll='ls -lh'
+alias lla='ls -la'
+
+alias cat='bat --theme "Monokai Extended"'
+alias ncat='cat --paging=never'
+alias nlcat='cat -pP'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias ta='tmux attach -t'
+alias tad='tmux attach -d -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tksv='tmux kill-server'
+alias tkss='tmux kill-session -t'
+alias tmk='tmuxp load ~/dotfiles/tmux/tmux-kali.yaml'
+
+alias pya='pyenv activate'
+alias pyd='pyenv deactivate'
+
+alias comafi='cd ~/comafi'

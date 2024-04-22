@@ -1,0 +1,45 @@
+function llz(){
+  if [ "$1" = "h" ]; then
+    fzf -m --reverse --preview-window down:20 --preview '[[ $(file --mime {}) =~ binary ]] &&
+      echo {} is a binary file ||
+      (bat --style=numbers --color=always {} ||
+      highlight -O ansi -l {} ||
+      coderay {} ||
+      rougify {} ||
+      cat {}) 2> /dev/null | head -500'
+  else
+      fzf -m --preview '[[ $(file --mime {}) =~ binary ]] &&
+        echo {} is a binary file ||
+        (bat --style=numbers --color=always {} ||
+        highlight -O ansi -l {} ||
+        coderay {} ||
+        rougify {} ||
+        cat {}) 2> /dev/null | head -500'
+  fi
+}
+
+## HISTORY
+function omz_history {
+  local clear list
+  zparseopts -E c=clear l=list
+
+  if [[ -n "$clear" ]]; then
+    echo -n >| "$HISTFILE"
+    echo >&2 History file deleted. Reload the session to see its effects.
+  elif [[ -n "$list" ]]; then
+    builtin fc "$@"
+  else
+    [[ ${@[-1]-} = *[0-9]* ]] && builtin fc -l "$@" || builtin fc -l "$@" 1
+  fi
+}
+
+cm_grep_secret() {
+    SECRET=$HOME/comafi/secrets/$1
+    STRING=$2
+    SEARCH_B64=$(egrep $STRING $SECRET | awk -F: '{print $2}' | tr -d ' ')
+    SEARCH_B64_DECODE=$(egrep $STRING $SECRET | awk -F: '{print $2}' | tr -d ' ' | base64 -d)
+    echo $SEARCH_B64
+    echo $SEARCH_B64_DECODE
+}
+
+function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}

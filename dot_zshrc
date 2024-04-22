@@ -1,0 +1,73 @@
+# If not in tmux, start tmux: reads from and writes to the TTY.
+if [[ -z ${TMUX+X}${ZSH_SCRIPT+X}${ZSH_EXECUTION_STRING+X} ]]; then
+  exec tmux
+fi
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# PLUGINS
+
+plugins=(
+  kubectl
+  #kube-ps1
+  #virtualenv
+  colored-man-pages
+  fzf
+  #pyenv
+  # zsh-vi-mode
+)
+source $ZSH/oh-my-zsh.sh
+
+# AUTOCOMPLETE
+source <(kubectl completion zsh)
+
+# REVISAR
+bindkey "^[[H" beginning-of-line
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>';
+bindkey "^[[F" end-of-line
+
+
+# PYENV & PYENV-VIRTUALENV
+#if command -v pyenv-virtualenv-init 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+#  eval "$(pyenv virtualenv-init -)"
+#fi
+
+
+# POWERLEVEL
+export PATH="/usr/local/sbin:$PATH"
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+ [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#__conda_setup="$('/Users/acordoba/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+#if [ $? -eq 0 ]; then
+#    eval "$__conda_setup"
+#else
+#    if [ -f "/Users/acordoba/miniconda3/etc/profile.d/conda.sh" ]; then
+#        . "/Users/acordoba/miniconda3/etc/profile.d/conda.sh"
+#    else
+#        export PATH="/Users/acordoba/miniconda3/bin:$PATH"
+#    fi
+#fi
+#unset __conda_setup
+## <<< conda initialize <<<
+
+# IMPORTS
+
+[ -f ~/.aliases ] && source ~/.aliases
+[ -f ~/.custom_functions ] && source ~/.custom_functions
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# TEST

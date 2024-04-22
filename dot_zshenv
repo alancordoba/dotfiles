@@ -1,0 +1,44 @@
+export LANG=en_US.UTF-8
+export TERM=xterm-256color
+export EDITOR=/usr/local/bin/nvim
+export GOPATH=~/.go
+export USR_BIN=~/bin
+export PATH=$USR_BIN:$GOPATH/bin:/usr/local/aws/bin:$PATH
+export DISABLE_AUTO_TITLE='true'
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export ITERM_ENABLE_SHELL_INTEGRATION_WITH_TMUX=NO
+
+
+[[ -n $TMUX ]] && export TERM="xterm-256color"
+export ZSH="$HOME/.oh-my-zsh"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/opt/openssl@3/bin:$PATH"
+
+ZSH_CUSTOM_PLUGINS=$HOME/.zsh_plugins
+COMPLETION_WAITING_DOTS="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# HISTORY
+
+HIST_STAMPS="dd.mm.yyyy"
+case ${HIST_STAMPS-} in
+  "mm/dd/yyyy") alias history='omz_history -f' ;;
+  "dd.mm.yyyy") alias history='omz_history -E' ;;
+  "yyyy-mm-dd") alias history='omz_history -i' ;;
+  "") alias history='omz_history' ;;
+  *) alias history="omz_history -t '$HIST_STAMPS'" ;;
+esac
+
+HISTSIZE=1000000000
+SAVEHIST=$HISTSIZE
+
+[ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
+
+setopt appendhistory     #Append history to the history file (no overwriting)
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+setopt inc_append_history     # add commands to HISTFILE in order of execution
+setopt share_history          # share command history data
+setopt extended_history       # record timestamp of command in HISTFILE
