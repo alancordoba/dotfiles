@@ -1,7 +1,9 @@
 # ALIAS
 alias lg='lazygit'
 alias extractIP="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
+alias hcd='cd ~/htb'
 alias cdt='cd ~/tools'
+alias cdd='cd ~/dotfiles'
 
 alias vim='nvim'
 alias zshreload='omz reload'
@@ -29,3 +31,9 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
+alias tmk='tmuxp load ~/dotfiles/tmux/tmux-kali.yaml'
+
+alias pya='pyenv activate'
+alias pyd='pyenv deactivate'
+
+alias comafi='cd ~/comafi'
