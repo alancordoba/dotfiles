@@ -1,0 +1,33 @@
+---
+packages:
+  darwin:
+    brews:
+      - "bat"
+      - "fontconfig"
+      - "fzf"
+      - "git"
+      - "kubectl"
+      - "lsd"
+      - "neovim"
+      - "node"
+      - "tmux"
+      - "tree"
+      - "wget"
+      - "zsh-autosuggestions"
+      - "zsh-syntax-highlighting"
+    casks:
+      - "alacritty"
+      - "balenaetcher"
+      - "firefox"
+      - "font-meslo-lg-nerd-font"
+      - "google-chrome"
+      - "microsoft-remote-desktop"
+      - "microsoft-teams"
+      - "obsidian"
+      - "rectangle"
+      - "sublime-text"
+      - "telegram"
+      - "transmission"
+      - "whatsapp"
+    tap:
+      - "homebrew/cask-fonts"
