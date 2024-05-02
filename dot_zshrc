@@ -28,5 +28,5 @@ bindkey "^[[F" end-of-line
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.custom_functions ] && source ~/.custom_functions
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
