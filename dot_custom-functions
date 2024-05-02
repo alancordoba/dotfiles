@@ -33,13 +33,4 @@ function omz_history {
   fi
 }
 
-cm_grep_secret() {
-    SECRET=$HOME/comafi/secrets/$1
-    STRING=$2
-    SEARCH_B64=$(egrep $STRING $SECRET | awk -F: '{print $2}' | tr -d ' ')
-    SEARCH_B64_DECODE=$(egrep $STRING $SECRET | awk -F: '{print $2}' | tr -d ' ' | base64 -d)
-    echo $SEARCH_B64
-    echo $SEARCH_B64_DECODE
-}
-
 function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/$@ ;}
