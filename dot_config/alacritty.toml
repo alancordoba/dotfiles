@@ -44,7 +44,7 @@ text = "CellForeground"
 TERM = "xterm-256color"
 
 [font]
-size = 16.0
+size = 20.0
 
 [font.bold]
 family = "MesloLGS Nerd Font"
@@ -175,3 +175,7 @@ instance = "Alacritty"
 [window.padding]
 x = 6
 y = 6
+
+[window.dimensions]
+lines = 60
+columns = 150
