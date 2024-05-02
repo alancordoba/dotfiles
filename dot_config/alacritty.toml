@@ -44,7 +44,7 @@ text = "CellForeground"
 TERM = "xterm-256color"
 
 [font]
-size = 20.0
+size = 18.0
 
 [font.bold]
 family = "MesloLGS Nerd Font"
@@ -161,11 +161,11 @@ key = "Right"
 mods = "Alt"
 
 [scrolling]
-history = 5000
+history = 500000
 
 [window]
 dynamic_padding = false
-opacity = 1.0
+opacity = 0.3
 title = "Alacritty"
 
 [window.class]
@@ -173,9 +173,9 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 6
-y = 6
+x = 0
+y = 0
 
 [window.dimensions]
-lines = 60
+lines = 40
 columns = 150
