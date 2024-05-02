@@ -25,8 +25,8 @@ bindkey "^[[F" end-of-line
 
 # IMPORTS
 
-[ -f ~/.aliases ] && source ~/.aliases
-[ -f ~/.custom_functions ] && source ~/.custom_functions
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
- [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -e ~/.aliases ] && source ~/.aliases
+[ -e ~/.custom_functions ] && source ~/.custom_functions
+[ -e ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -e /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+[ -e /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
