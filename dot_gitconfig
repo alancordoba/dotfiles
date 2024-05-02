@@ -27,3 +27,5 @@ ui = true
 [push]
   default = simple
   autoSetupRemote = true
+[commit]
+	gpgsign = true
