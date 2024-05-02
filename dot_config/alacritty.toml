@@ -161,7 +161,7 @@ key = "Right"
 mods = "Alt"
 
 [scrolling]
-history = 500000
+history = 100000
 
 [window]
 dynamic_padding = false
