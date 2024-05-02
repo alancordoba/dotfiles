@@ -3,6 +3,8 @@ alias lg='lazygit'
 alias extractIP="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias cdt='cd ~/tools' 
 
+
+alias cm='chezmoi'
 alias vim='nvim'
 alias zshreload='omz reload'
 alias vimz='chezmoi edit ~/.zshrc'
