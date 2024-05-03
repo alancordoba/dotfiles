@@ -1,0 +1,12 @@
+{{- $name:= promptString "Name" -}}
+{{- $email := promptString "email" -}}
+{{- $username:= promptString "username" -}}
+[git]
+    autoCommit = true
+    autoPush = true
+    commitMessageTemplate = "{{ promptString \"Commit message\" }}"
+
+[data]
+    name  = "{{ $name}}"
+    email = "{{ $email }}"
+    username= "{{ $username}}"
