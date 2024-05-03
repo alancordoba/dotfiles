@@ -34,6 +34,7 @@ packages:
       - "yubico-yubikey-manager"
       - "telegram"
       - "transmission"
+      - "tunnelblick"
       - "whatsapp"
     tap:
       - "homebrew/cask-fonts"

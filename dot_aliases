@@ -3,7 +3,7 @@ alias lg='lazygit'
 alias extractIP="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
 alias cdt='cd ~/tools' 
 
-
+alias cddrive='cd /Users/alancordoba/Library/Mobile Documents/com~apple~CloudDocs'
 alias cm='chezmoi'
 alias cma='cm apply'
 alias cmd='cm diff'
