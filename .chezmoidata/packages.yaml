@@ -8,6 +8,7 @@ packages:
       - "git"
       - "kubectl"
       - "lsd"
+      - "jq"
       - "neovim"
       - "node"
       - "pinentry-mac"
