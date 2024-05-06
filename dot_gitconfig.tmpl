@@ -9,10 +9,13 @@
 	excludesfile = /Users/{{ .username }}/.gitignore
 
 [interactive]
-  diffFilter = delta --color-only
+  diffFilter = delta --color-only --features=interactive
 
 [delta]
+  features = decorations
   navigate = true
+  side-by-side = true
+  line-numbers = true
 
 [merge]
   conflictStyle = diff3
