@@ -15,6 +15,7 @@ packages:
       - "node"
       - "pinentry-mac"
       - "tmux"
+      - "telnet"
       - "tlrc"
       - "tree"
       - "wget"
