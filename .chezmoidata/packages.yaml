@@ -3,6 +3,7 @@ packages:
   darwin:
     brews:
       - "bat"
+      - "eza"
       - "git-delta"
       - "fd"
       - "fontconfig"
