@@ -2,6 +2,7 @@
 packages:
   darwin:
     brews:
+      - "ansible"
       - "bat"
       - "eza"
       - "git-delta"
@@ -15,6 +16,7 @@ packages:
       - "neovim"
       - "node"
       - "pinentry-mac"
+      - "pwgen"
       - "tmux"
       - "telnet"
       - "tlrc"
