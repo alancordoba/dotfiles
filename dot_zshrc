@@ -19,9 +19,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # REVISAR
-bindkey "^[[H" beginning-of-line
 export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>';
-bindkey "^[[F" end-of-line
 
 # IMPORTS
 

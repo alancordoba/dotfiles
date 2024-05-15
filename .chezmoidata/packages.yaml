@@ -44,6 +44,7 @@ packages:
       - "transmission"
       - "tunnelblick"
       - "whatsapp"
+      - "vmware-horizon-client"
       - "yubico-authenticator"
       - "yubico-yubikey-manager"
     tap:
