@@ -198,5 +198,5 @@ lines = 48
 columns = 160
 
 [shell]
-args = ["new-session", "-A", "-D", "-s", "main"]
-program = "/usr/local/bin/tmux"
+args = ["-l", "-c", "tmux attach || tmux"]
+program = "/bin/zsh"
