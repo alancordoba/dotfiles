@@ -199,4 +199,5 @@ columns = 160
 
 [shell]
 args = ["-l", "-c", "tmux attach || tmux"]
+#program = "/usr/local/bin/fish"
 program = "/bin/zsh"

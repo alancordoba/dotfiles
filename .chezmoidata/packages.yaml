@@ -46,6 +46,7 @@ packages:
       - "microsoft-teams"
       - "mist"
       - "monitorcontrol"
+      - "obs"
       - "obsidian"
       - "powershell"
       - "rectangle"
