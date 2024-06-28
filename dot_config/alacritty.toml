@@ -102,30 +102,34 @@ mode = "~Alt"
 mods = "None"
 
 [[keyboard.bindings]]
-chars = "\u007c"
-key = "Left"
-mods = "Control"
+chars = "-"
+key = "Minus"
+mods = "Command|Shift"
 
 [[keyboard.bindings]]
 chars = "\u007c"
-key = "Left"
-mods = "Control"
+key = "Pipe"
+mods = "Command|Shift"
 
+# TMUX LEFT Select Pane
 [[keyboard.bindings]]
 chars = "\u001bd"
 key = "Left"
 mods = "Command"
 
+# TMUX RIGHT Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bc"
 key = "Right"
 mods = "Command"
 
+# TMUX DOWN Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bb"
 key = "Down"
 mods = "Command"
 
+# TMUX UP Select Pane
 [[keyboard.bindings]]
 chars = "\u001Ba"
 key = "Up"
@@ -133,7 +137,7 @@ mods = "Command"
 
 [scrolling]
 history = 100000
-multiplier = 3
+multiplier = 2
 
 [mouse]
 hide_when_typing = true

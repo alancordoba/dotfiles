@@ -21,6 +21,7 @@ packages:
       - "node"
       - "pinentry-mac"
       - "pwgen"
+      - "showkey"
       - "telnet"
       - "tlrc"
       - "tmux"
