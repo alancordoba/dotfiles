@@ -108,7 +108,7 @@ mods = "Command|Shift"
 
 [[keyboard.bindings]]
 chars = "\u0002\u0062\u007c"
-key = "Pipe"
+key = "|"
 mods = "Command|Shift"
 
 # TMUX LEFT Select Pane
