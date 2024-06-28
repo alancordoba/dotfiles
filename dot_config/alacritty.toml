@@ -74,25 +74,6 @@ y = 0
 x = 0
 y = 0
 
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-action = "Copy"
-key = "C"
-mods = "Control|Shift"
-
-[[keyboard.bindings]]
-action = "PasteSelection"
-key = "Insert"
-mods = "Shift"
-
-[[keyboard.bindings]]
-action = "ResetFontSize"
-key = "Key0"
-mods = "Control"
 
 [[keyboard.bindings]]
 action = "IncreaseFontSize"
@@ -110,27 +91,7 @@ key = "Minus"
 mods = "Control"
 
 [[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "F11"
-mods = "None"
-
-[[keyboard.bindings]]
-action = "Paste"
-key = "Paste"
-mods = "None"
-
-[[keyboard.bindings]]
-action = "Copy"
-key = "Copy"
-mods = "None"
-
-[[keyboard.bindings]]
 action = "ClearLogNotice"
-key = "L"
-mods = "Control"
-
-[[keyboard.bindings]]
-chars = "\f"
 key = "L"
 mods = "Control"
 
@@ -141,32 +102,34 @@ mode = "~Alt"
 mods = "None"
 
 [[keyboard.bindings]]
-action = "ScrollPageDown"
-key = "PageDown"
-mode = "~Alt"
-mods = "None"
+chars = "\u007c"
+key = "Left"
+mods = "Control"
 
 [[keyboard.bindings]]
-action = "ScrollToTop"
-key = "Home"
-mode = "~Alt"
-mods = "Shift"
+chars = "\u007c"
+key = "Left"
+mods = "Control"
 
 [[keyboard.bindings]]
-action = "ScrollToBottom"
-key = "End"
-mode = "~Alt"
-mods = "Shift"
+chars = "\u001bd"
+key = "Left"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bc"
+key = "Right"
+mods = "Command"
 
 [[keyboard.bindings]]
 chars = "\u001Bb"
-key = "Left"
-mods = "Alt"
+key = "Down"
+mods = "Command"
 
 [[keyboard.bindings]]
-chars = "\u001Bf"
-key = "Right"
-mods = "Alt"
+chars = "\u001Ba"
+key = "Up"
+mods = "Command"
 
 [scrolling]
 history = 100000
