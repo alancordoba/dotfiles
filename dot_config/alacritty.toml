@@ -101,16 +101,6 @@ key = "PageUp"
 mode = "~Alt"
 mods = "None"
 
-[[keyboard.bindings]]
-chars = "-"
-key = "Minus"
-mods = "Command|Shift"
-
-[[keyboard.bindings]]
-chars = "\u007c"
-key = "|"
-mods = "Command|Shift"
-
 # TMUX LEFT Select Pane
 [[keyboard.bindings]]
 chars = "\u001bd"
