@@ -107,7 +107,7 @@ key = "Minus"
 mods = "Command|Shift"
 
 [[keyboard.bindings]]
-chars = "\u007c"
+chars = "\u0002\u0062\u007c"
 key = "Pipe"
 mods = "Command|Shift"
 
