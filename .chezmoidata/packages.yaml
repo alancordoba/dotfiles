@@ -1,6 +1,9 @@
 ---
 packages:
   darwin:
+    tap:
+      - "homebrew/cask-fonts"
+      - "hashicorp/tap"
     brews:
       - "ansible"
       - "bat"
@@ -12,6 +15,7 @@ packages:
       - "fzf"
       - "git"
       - "git-delta"
+      - "hashicorp/tap/vault"
       - "jq"
       - "kubectl"
       - "lsd"
@@ -60,5 +64,3 @@ packages:
       - "whatsapp"
       - "yubico-authenticator"
       - "yubico-yubikey-manager"
-    tap:
-      - "homebrew/cask-fonts"

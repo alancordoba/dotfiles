@@ -74,6 +74,15 @@ y = 0
 x = 0
 y = 0
 
+[[keyboard.bindings]]
+chars = "\x1BF"
+key = "Right"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\x1BB"
+key = "Left"
+mods = "Alt"
 
 [[keyboard.bindings]]
 action = "IncreaseFontSize"
