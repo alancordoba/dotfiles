@@ -108,25 +108,25 @@ mods = "Control"
 [[keyboard.bindings]]
 chars = "\u001bd"
 key = "Left"
-mods = "Control|Alt"
+mods = "Control|Shift"
 
 # TMUX RIGHT Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bc"
 key = "Right"
-mods = "Control|Alt"
+mods = "Control|Shift"
 
 # TMUX DOWN Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bb"
 key = "Down"
-mods = "Control|Alt"
+mods = "Control|Shift"
 
 # TMUX UP Select Pane
 [[keyboard.bindings]]
 chars = "\u001Ba"
 key = "Up"
-mods = "Control|Alt"
+mods = "Control|Shift"
 
 [scrolling]
 history = 100000
