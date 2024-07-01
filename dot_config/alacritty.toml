@@ -75,12 +75,12 @@ x = 0
 y = 0
 
 [[keyboard.bindings]]
-chars = "\x1BF"
+chars = "\u001BF"
 key = "Right"
 mods = "Alt"
 
 [[keyboard.bindings]]
-chars = "\x1BB"
+chars = "\u001BB"
 key = "Left"
 mods = "Alt"
 
