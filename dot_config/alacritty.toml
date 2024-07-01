@@ -104,35 +104,29 @@ action = "ClearLogNotice"
 key = "L"
 mods = "Control"
 
-[[keyboard.bindings]]
-action = "ScrollPageUp"
-key = "PageUp"
-mode = "~Alt"
-mods = "None"
-
 # TMUX LEFT Select Pane
 [[keyboard.bindings]]
 chars = "\u001bd"
 key = "Left"
-mods = "Command"
+mods = "Control|Alt"
 
 # TMUX RIGHT Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bc"
 key = "Right"
-mods = "Command"
+mods = "Control|Alt"
 
 # TMUX DOWN Select Pane
 [[keyboard.bindings]]
 chars = "\u001Bb"
 key = "Down"
-mods = "Command"
+mods = "Control|Alt"
 
 # TMUX UP Select Pane
 [[keyboard.bindings]]
 chars = "\u001Ba"
 key = "Up"
-mods = "Command"
+mods = "Control|Alt"
 
 [scrolling]
 history = 100000
