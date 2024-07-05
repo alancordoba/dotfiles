@@ -100,7 +100,7 @@ key = "Minus"
 mods = "Control"
 
 [[keyboard.bindings]]
-chars = "\x0c"
+chars = "\u000c"
 key = "L"
 mods = "Control"
 
