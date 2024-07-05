@@ -100,7 +100,7 @@ key = "Minus"
 mods = "Control"
 
 [[keyboard.bindings]]
-action = "ClearLogNotice"
+chars = "\x0c"
 key = "L"
 mods = "Control"
 
