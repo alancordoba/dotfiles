@@ -57,6 +57,7 @@ packages:
       - "rectangle"
       - "remote-desktop-manager"
       - "sublime-text"
+      - "the-unarchiver"
       - "telegram"
       - "transmission"
       - "tunnelblick"
