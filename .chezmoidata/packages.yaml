@@ -18,6 +18,7 @@ packages:
       - "hashicorp/tap/vault"
       - "jq"
       - "kubectl"
+      - "lazygit"
       - "lsd"
       - "mkcert"
       - "neovim"
