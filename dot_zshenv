@@ -7,6 +7,7 @@ export USR_BIN=~/bin
 export PATH=$USR_BIN:$GOPATH/bin:/usr/local/aws/bin:$PATH
 export DISABLE_AUTO_TITLE='true'
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export WORDCHARS='*?_-.[]~=&;!#$%^(){}<>';
 
 
 [[ -n $TMUX ]] && export TERM="xterm-256color"
@@ -29,7 +30,7 @@ case ${HIST_STAMPS-} in
   *) alias history="omz_history -t '$HIST_STAMPS'" ;;
 esac
 
-HISTSIZE=1000000000
+HISTSIZE=10000000
 SAVEHIST=$HISTSIZE
 
 [ -z "$HISTFILE" ] && HISTFILE="$HOME/.zsh_history"
