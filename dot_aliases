@@ -1,7 +1,7 @@
 # ALIAS
 alias lg='lazygit'
 alias extractIP="grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'"
-alias cdt='cd ~/tools' 
+alias cdt='cd ~/tools'
 alias cd='z'
 
 alias cpd='cd /Users/alancordoba/Library/Mobile\ Documents/com~apple~CloudDocs'
@@ -41,4 +41,12 @@ alias tmk='tmuxp load ~/dotfiles/tmux/tmux-kali.yaml'
 alias pya='pyenv activate'
 alias pyd='pyenv deactivate'
 
-alias comafi='cd ~/comafi'
+
+alias gcmsg='git commit --message'
+alias gcf='git config --list'
+alias glgga='git log --graph --decorate --all'
+alias gl='git pull'
+alias gp='git push'
+alias ga='git add'
+alias gb='git branch'
+alias gcb='git checkout -b'
