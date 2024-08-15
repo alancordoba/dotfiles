@@ -74,15 +74,15 @@ y = 0
 x = 0
 y = 0
 
-[[keyboard.bindings]]
-chars = "\u001BF"
-key = "Right"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001BB"
-key = "Left"
-mods = "Alt"
+#[[keyboard.bindings]]
+#chars = "\u001BF"
+#key = "Right"
+#mods = "Alt"
+#
+#[[keyboard.bindings]]
+#chars = "\u001BB"
+#key = "Left"
+#mods = "Alt"
 
 [[keyboard.bindings]]
 action = "IncreaseFontSize"
@@ -104,29 +104,26 @@ chars = "\u000c"
 key = "L"
 mods = "Control"
 
-## TMUX LEFT Select Pane
-#[[keyboard.bindings]]
-#chars = "\u001bd"
-#key = "Left"
-#mods = "Control|Shift"
-#
-## TMUX RIGHT Select Pane
-#[[keyboard.bindings]]
-#chars = "\u001Bc"
-#key = "Right"
-#mods = "Control|Shift"
-#
-## TMUX DOWN Select Pane
-#[[keyboard.bindings]]
-#chars = "\u001Bb"
-#key = "Down"
-#mods = "Control|Shift"
-#
-## TMUX UP Select Pane
-#[[keyboard.bindings]]
-#chars = "\u001Ba"
-#key = "Up"
-#mods = "Control|Shift"
+[[keyboard.bindings]]
+key = "Up"
+mods = "Alt"
+chars = "\u0002\u001b[1;5A"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Alt"
+chars = "\u0002\u001b[1;5B"
+
+[[keyboard.bindings]]
+key = "Left"
+mods = "Alt"
+chars = "\u0002\u001b[1;5D"
+
+[[keyboard.bindings]]
+key = "Right"
+mods = "Alt"
+chars = "\u0002\u001b[1;5C"
+
 
 [scrolling]
 history = 100000
