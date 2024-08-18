@@ -7,7 +7,17 @@ return {
     "nvim-tree/nvim-web-devicons",
     "folke/todo-comments.nvim",
   },
-  config = function()
+  opts = {
+    extensions = {
+      fzf = {
+        fuzzy = true, -- false will only do exact matching
+        override_generic_sorter = true, -- override the generic sorter
+        override_file_sorter = true, -- override the file sorter
+        case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+      },
+    },
+  },
+  config = function(opts)
     local telescope = require("telescope")
     local actions = require("telescope.actions")
     local transform_mod = require("telescope.actions.mt").transform_mod
@@ -15,7 +25,6 @@ return {
     local trouble = require("trouble")
     local trouble_telescope = require("trouble.sources.telescope")
 
-    -- or create your custom action
     local custom_actions = transform_mod({
       open_trouble_qflist = function(prompt_bufnr)
         trouble.toggle("quickfix")
@@ -23,6 +32,7 @@ return {
     })
 
     telescope.setup({
+      opts,
       defaults = {
         path_display = { "smart" },
         mappings = {
@@ -35,7 +45,6 @@ return {
         },
       },
     })
-
     telescope.load_extension("fzf")
 
     -- set keymaps
@@ -47,5 +56,22 @@ return {
     keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
     keymap.set("n", "<leader>ft", "<cmd>TodoTelescope<cr>", { desc = "Find todos" })
     keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "Open Buffers" })
+
+    keymap.set("n", "<leader>rp", function()
+      require("telescope.builtin").find_files({
+        prompt_title = "Plugins",
+        cwd = vim.fn.stdpath("config") .. "/lua/acordoba/plugins",
+        attach_mappings = function(_, map)
+          local actions = require("telescope.actions")
+          local action_state = require("telescope.actions.state")
+          map("i", "<c-y>", function(prompt_bufnr)
+            local new_plugin = action_state.get_current_line()
+            actions.close(prompt_bufnr)
+            vim.cmd(string.format("edit ~/.config/nvim/lua/acordoba/plugins/%s.lua", new_plugin))
+          end)
+          return true
+        end,
+      })
+    end, { desc = "Open Plugins" })
   end,
 }
