@@ -6,6 +6,7 @@ packages:
       - "hashicorp/tap"
     brews:
       - "ansible"
+      - "argocd"
       - "bat"
       - "dos2unix"
       - "eza"
