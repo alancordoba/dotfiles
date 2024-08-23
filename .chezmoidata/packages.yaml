@@ -4,6 +4,8 @@ packages:
     tap:
       - "homebrew/cask-fonts"
       - "hashicorp/tap"
+      - "anchore/grype"
+      - "anchore/syft"
     brews:
       - "ansible"
       - "argocd"
@@ -16,6 +18,8 @@ packages:
       - "fzf"
       - "git"
       - "git-delta"
+      - "golang"
+      - "gype"
       - "hashicorp/tap/vault"
       - "jq"
       - "kubectl"
@@ -29,6 +33,8 @@ packages:
       - "pwgen"
       - "ripgrep"
       - "showkey"
+      - "sshs"
+      - "syft"
       - "telnet"
       - "tlrc"
       - "tmux"
