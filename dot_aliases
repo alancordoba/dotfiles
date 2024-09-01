@@ -6,7 +6,7 @@ alias cd='z'
 
 alias cpd='cd /Users/alancordoba/Library/Mobile\ Documents/com~apple~CloudDocs'
 alias cm='chezmoi'
-alias cma='cm apply'
+alias cma='cm add'
 alias cmd='cm diff'
 alias cms='cm status'
 alias vim='nvim'
