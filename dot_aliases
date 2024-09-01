@@ -44,7 +44,7 @@ alias pyd='pyenv deactivate'
 
 alias gcmsg='git commit --message'
 alias gcf='git config --list'
-alias glgga='git log --graph --decorate --all'
+alias glgg='git logg'
 alias gl='git pull'
 alias gp='git push'
 alias ga='git add'
