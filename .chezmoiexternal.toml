@@ -12,3 +12,13 @@
   type = "git-repo"
   url = "https://github.com/ohmyzsh/ohmyzsh.git"
   refreshPeriod = "168h"
+
+[".tmux/tokyonight_storm.tmux"]
+  type = "file"
+  url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/tmux/tokyonight_storm.tmux"
+  refreshPeriod = "168h"
+
+[".config/lazygit/tokyonight_storm.yaml"]
+  type = "file"
+  url = "https://raw.githubusercontent.com/folke/tokyonight.nvim/main/extras/lazygit/tokyonight_storm.yml"
+  refreshPeriod = "168h"
