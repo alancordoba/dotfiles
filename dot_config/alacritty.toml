@@ -112,7 +112,7 @@ hide_when_typing = true
 
 [window]
 dynamic_padding = false
-opacity = 0.9
+opacity = 0.8
 blur = true
 title = "Alacritty"
 decorations = "Buttonless"
@@ -125,8 +125,8 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 10
-y = 10
+x = 0
+y = 0
 
 [window.dimensions]
 lines = 48
