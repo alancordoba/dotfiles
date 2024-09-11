@@ -4,7 +4,7 @@ export FZF_DEFAULT_OPTS='--tmux bottom,40% --height 40% --layout reverse --borde
 #--preview "bat --style=numbers --color=always --line-range :500 {}"'
 
 plugins=(
-  kubectl
+  #kubectl
   #kube-ps1
   #virtualenv
   colored-man-pages
@@ -12,11 +12,7 @@ plugins=(
   #pyenv
 )
 
-
 source $ZSH/oh-my-zsh.sh
-
-
-# IMPORTS
 
 [ -e ~/.aliases ] && source ~/.aliases
 [ -e ~/.custom-functions ] && source ~/.custom-functions
