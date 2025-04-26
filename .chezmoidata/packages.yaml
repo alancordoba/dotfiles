@@ -1,5 +1,7 @@
 ---
 packages:
+  go:
+    - "github.com/trap-bytes/hauditor@latest"
   darwin:
     tap:
       - "homebrew/cask-fonts"
@@ -53,12 +55,14 @@ packages:
       - "zsh-autosuggestions"
       - "zsh-syntax-highlighting"
     casks:
-      - "nikitabobko/tap/aerospace"
+      #      - "nikitabobko/tap/aerospace"
       - "alacritty"
       - "balenaetcher"
       - "cryptomator"
+      - "betterdisplay"
       - "expressvpn"
       - "firefox"
+      - "finch"
       - "flameshot"
       - "font-meslo-lg-nerd-font"
       - "font-monaspace-nerd-font"
@@ -68,16 +72,16 @@ packages:
       - "font-victor-mono"
       - "google-chrome"
       - "gpg-suite"
+      # - "insomnia"
       - "keystore-explorer"
-      - "microsoft-remote-desktop"
+      # - "microsoft-remote-desktop"
       - "microsoft-teams"
       - "mist"
       - "monitorcontrol"
-      - "obs"
+      # - "obs"
       - "obsidian"
       - "powershell"
       - "rectangle"
-      - "remote-desktop-manager"
       - "sublime-text"
       - "telegram"
       - "the-unarchiver"

@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+set -euo pipefail
+
+GO_BIN="$(command -v go || true)"
+
+if [[ -z "$GO_BIN" ]]; then
+  exit 1
+fi
+
+{{ range .packages.go -}}
+RAW_TOOL="{{ . }}"
+TOOL=$(printf "%q" "$RAW_TOOL")
+TOOL_NAME="$(basename "${RAW_TOOL%%@*}")"
+$GO_BIN install $TOOL
+{{ end -}}
+{{ end -}}
